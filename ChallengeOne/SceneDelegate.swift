@@ -22,10 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let localRepository = LocalRepository()
         let viewModel = ViewModel(repository: localRepository)
         let viewController = ViewController(viewModel: viewModel)
-        viewModel.setDelegate(viewModelDelgate: viewController)
         let navigationController = UINavigationController(rootViewController: viewController)
-//        viewModel.setDelegate(viewModelDelgate: viewController)
-        
         windows.rootViewController = navigationController
         self.window = windows
         windows.makeKeyAndVisible()

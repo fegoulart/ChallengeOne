@@ -13,11 +13,8 @@ public final class ViewModel: ViewModelProtocol {
     init(repository: RepositoryProtocol) {
         self.repository = repository
     }
-    
-    public func setDelegate (viewModelDelgate delegate : ViewModelDelegate)
-    {
+    public func setDelegate(viewModelDelgate delegate: ViewModelDelegate) {
         self.delegate = delegate
-        
     }
 
     public func getData() {
