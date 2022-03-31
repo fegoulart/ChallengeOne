@@ -13,9 +13,16 @@ public final class ViewModel: ViewModelProtocol {
     init(repository: RepositoryProtocol) {
         self.repository = repository
     }
+    
+    public func setDelegate (viewModelDelgate delegate : ViewModelDelegate)
+    {
+        self.delegate = delegate
+        
+    }
 
     public func getData() {
         let data = repository.fetchData()
-        delegate?.dataReceived(data)
+        self.delegate?.dataReceived(data)
+
     }
 }

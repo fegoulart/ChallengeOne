@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530B477027F5C98E0062538A /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530B476F27F5C98E0062538A /* main.storyboard */; };
 		9B71296827F50A4300B27059 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71296727F50A4300B27059 /* ViewModel.swift */; };
 		9B71296A27F50A6700B27059 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71296927F50A6700B27059 /* ViewModelProtocol.swift */; };
 		9B71296C27F50A8400B27059 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71296B27F50A8400B27059 /* ViewModelDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		530B476F27F5C98E0062538A /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		9B71296727F50A4300B27059 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9B71296927F50A6700B27059 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		9B71296B27F50A8400B27059 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				9B85F54F27F4850F00632416 /* SceneDelegate.swift */,
 				9B85F55127F4850F00632416 /* ViewController.swift */,
 				9B85F55627F4851100632416 /* Assets.xcassets */,
+				530B476F27F5C98E0062538A /* main.storyboard */,
 				9B85F55827F4851100632416 /* LaunchScreen.storyboard */,
 				9B85F55B27F4851100632416 /* Info.plist */,
 			);
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B85F55A27F4851100632416 /* LaunchScreen.storyboard in Resources */,
+				530B477027F5C98E0062538A /* main.storyboard in Resources */,
 				9B85F55727F4851100632416 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
