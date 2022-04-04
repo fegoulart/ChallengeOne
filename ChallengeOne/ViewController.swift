@@ -3,15 +3,14 @@ import UIKit
 public final class ViewController: UITableViewController, ViewModelDelegate {
     var catBreeds: [String]?
     public func dataReceived(_ catBreeds: [String]) {
-        print(catBreeds)
         self.catBreeds = catBreeds
         tableView.reloadData()
     }
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let tableRowsNumber: Int = catBreeds?.count {
-            return tableRowsNumber} else{
-            return 0
-        }
+            return tableRowsNumber} else {
+                return 0
+            }
     }
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)

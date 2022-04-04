@@ -6,5 +6,6 @@
 //
 
 public protocol RepositoryProtocol {
-    func fetchData() -> [String]
+    func fetchData(completion: @escaping ([String]) ->
+                   Void)
 }
