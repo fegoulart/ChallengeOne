@@ -6,11 +6,10 @@
 //
 
 import UIKit
-
+//MARK: - Creating request
 class CatService: NSObject {
-    static func makeRequest(completion: @escaping ([String]) ->
+    static func makeRequest(completion: @escaping ([Breed]) ->
                             Void) {
-        var breeds: [String] = []
         let headers = ["x-api-key": "da0e98eb-5567-40f0-8858-28e328a63b30"]
         let request = NSMutableURLRequest(url: NSURL(string: "https://api.thecatapi.com/v1/breeds")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
@@ -18,31 +17,19 @@ class CatService: NSObject {
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers
         let session = URLSession.shared
+//MARK: - Getting response
         let dataTask = session.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
             if error != nil {
                 print(error ?? "No error data avaliable")} else {
                     if let data = data {
                         print("abriu data")
-                        do {
-                            if let convertedJsonIntoDict = try
-                                JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-                                as? [NSDictionary] {
-                                print(response ?? "no response data avaliable")
-                                for breed in convertedJsonIntoDict {
-                                    for attribute in breed {
-                                        let keyName = String(describing: attribute.key)
-                                        let keyValue = String(describing: attribute.value)
-                                        if keyName == "name" {
-                                            breeds.append(keyValue)
-                                        }
-                                    }
-                                }
-                                completion(breeds)
+                        let decoder = JSONDecoder()
+                        guard let breeds = try? decoder.decode([BreedDTO].self, from: data) else {return}
+                        let myBreeds: [Breed] = breeds.compactMap{
+                            Breed(id: $0.id ?? "", name: $0.name ?? "", temperament: $0.temperament ?? "", lifeSpan: $0.life_span ?? "", description: $0.description ?? "", image: $0.image ?? BreedImageDTO())
                             }
-                        } catch let error as NSError {
-                            print(error.localizedDescription)
-                            print("exception")
-                        }}
+                        completion(myBreeds)
+                    }
                 }
         }
         dataTask.resume()
