@@ -6,5 +6,5 @@
 //
 
 public protocol ViewModelDelegate: AnyObject {
-    func dataReceived(_ catBreeds: [String])
+    func dataReceived(_ catBreeds: [Breed])
 }

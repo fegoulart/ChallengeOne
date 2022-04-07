@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531C159027FDDA270070FF2B /* ViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C158E27FDDA270070FF2B /* ViewControllerPreview.swift */; };
+		531C159127FDDA270070FF2B /* ViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C158F27FDDA270070FF2B /* ViewPreview.swift */; };
+		531C159327FDDFC70070FF2B /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C159227FDDFC70070FF2B /* ViewCodable.swift */; };
+		53B1695A27FC5B6F0031F525 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B1695927FC5B6F0031F525 /* CatViewController.swift */; };
+		53B1695E27FC66A20031F525 /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B1695D27FC66A20031F525 /* ViewControllerDelegate.swift */; };
+		53B1696027FC6B380031F525 /* ViewControllerPortocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B1695F27FC6B380031F525 /* ViewControllerPortocol.swift */; };
+		53C877EE27FF4C6C00D104C6 /* BreedDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C877ED27FF4C6C00D104C6 /* BreedDTO.swift */; };
+		53C877F027FF4C9100D104C6 /* BreedImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C877EF27FF4C9100D104C6 /* BreedImageDTO.swift */; };
+		53C877F227FF4CB700D104C6 /* BreedWeightDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C877F127FF4CB700D104C6 /* BreedWeightDTO.swift */; };
+		53FBAFD927FB0CCF00C9F9E5 /* CatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBAFD827FB0CCF00C9F9E5 /* CatService.swift */; };
+		53FBAFDB27FB51BA00C9F9E5 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBAFDA27FB51BA00C9F9E5 /* Breed.swift */; };
+		9874F90AC96FDD3CEF2B8180 /* Pods_ChallengeOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B5AC054B0D9AD7B2D693CD /* Pods_ChallengeOne.framework */; };
 		9B71296827F50A4300B27059 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71296727F50A4300B27059 /* ViewModel.swift */; };
 		9B71296A27F50A6700B27059 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71296927F50A6700B27059 /* ViewModelProtocol.swift */; };
 		9B71296C27F50A8400B27059 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71296B27F50A8400B27059 /* ViewModelDelegate.swift */; };
@@ -17,8 +29,8 @@
 		9B85F55227F4850F00632416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85F55127F4850F00632416 /* ViewController.swift */; };
 		9B85F55727F4851100632416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B85F55627F4851100632416 /* Assets.xcassets */; };
 		9B85F55A27F4851100632416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B85F55827F4851100632416 /* LaunchScreen.storyboard */; };
-		9B85F56527F4851100632416 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85F56427F4851100632416 /* ViewControllerTests.swift */; };
 		9B85F57F27F4899600632416 /* XCTest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85F57E27F4899600632416 /* XCTest+Extensions.swift */; };
+		B13638E0E3591C66752BC05E /* Pods_ChallengeOneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87652509B3F51206837A8B00 /* Pods_ChallengeOneTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +44,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20043F4574758D842C8F9D2A /* Pods-ChallengeOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeOne.release.xcconfig"; path = "Target Support Files/Pods-ChallengeOne/Pods-ChallengeOne.release.xcconfig"; sourceTree = "<group>"; };
+		47CDAC3C02D0F49B76192A0D /* Pods-ChallengeOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeOne.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeOne/Pods-ChallengeOne.debug.xcconfig"; sourceTree = "<group>"; };
+		531C158E27FDDA270070FF2B /* ViewControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPreview.swift; sourceTree = "<group>"; };
+		531C158F27FDDA270070FF2B /* ViewPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPreview.swift; sourceTree = "<group>"; };
+		531C159227FDDFC70070FF2B /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		53B1695927FC5B6F0031F525 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		53B1695D27FC66A20031F525 /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		53B1695F27FC6B380031F525 /* ViewControllerPortocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPortocol.swift; sourceTree = "<group>"; };
+		53C877ED27FF4C6C00D104C6 /* BreedDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDTO.swift; sourceTree = "<group>"; };
+		53C877EF27FF4C9100D104C6 /* BreedImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageDTO.swift; sourceTree = "<group>"; };
+		53C877F127FF4CB700D104C6 /* BreedWeightDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedWeightDTO.swift; sourceTree = "<group>"; };
+		53FBAFD827FB0CCF00C9F9E5 /* CatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatService.swift; sourceTree = "<group>"; };
+		53FBAFDA27FB51BA00C9F9E5 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		87652509B3F51206837A8B00 /* Pods_ChallengeOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B5AC054B0D9AD7B2D693CD /* Pods_ChallengeOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B71296727F50A4300B27059 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9B71296927F50A6700B27059 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		9B71296B27F50A8400B27059 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
@@ -45,8 +72,9 @@
 		9B85F55927F4851100632416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B85F55B27F4851100632416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B85F56027F4851100632416 /* ChallengeOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B85F56427F4851100632416 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		9B85F57E27F4899600632416 /* XCTest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extensions.swift"; sourceTree = "<group>"; };
+		AEAA7D7E0240FFE94A3DC2C4 /* Pods-ChallengeOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeOneTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeOneTests/Pods-ChallengeOneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0E72EB6EE790662194D9D8B /* Pods-ChallengeOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeOneTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeOneTests/Pods-ChallengeOneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9874F90AC96FDD3CEF2B8180 /* Pods_ChallengeOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,12 +90,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13638E0E3591C66752BC05E /* Pods_ChallengeOneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53B1695827FC5B320031F525 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B85F55127F4850F00632416 /* ViewController.swift */,
+				53B1695927FC5B6F0031F525 /* CatViewController.swift */,
+				53B1695D27FC66A20031F525 /* ViewControllerDelegate.swift */,
+				53B1695F27FC6B380031F525 /* ViewControllerPortocol.swift */,
+				531C159227FDDFC70070FF2B /* ViewCodable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53C877F327FF4CC700D104C6 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				53FBAFDA27FB51BA00C9F9E5 /* Breed.swift */,
+				53C877ED27FF4C6C00D104C6 /* BreedDTO.swift */,
+				53C877EF27FF4C9100D104C6 /* BreedImageDTO.swift */,
+				53C877F127FF4CB700D104C6 /* BreedWeightDTO.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		58F18EB4C1BDE008D489AD06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B5AC054B0D9AD7B2D693CD /* Pods_ChallengeOne.framework */,
+				87652509B3F51206837A8B00 /* Pods_ChallengeOneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82C95E3EAE56664A05F9096E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47CDAC3C02D0F49B76192A0D /* Pods-ChallengeOne.debug.xcconfig */,
+				20043F4574758D842C8F9D2A /* Pods-ChallengeOne.release.xcconfig */,
+				AEAA7D7E0240FFE94A3DC2C4 /* Pods-ChallengeOneTests.debug.xcconfig */,
+				E0E72EB6EE790662194D9D8B /* Pods-ChallengeOneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9B71296627F50A3600B27059 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +153,10 @@
 		9B71296D27F50AA300B27059 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				53C877F327FF4CC700D104C6 /* Structs */,
 				9B71297027F50AC100B27059 /* Repository.swift */,
 				9B71297227F50AFB00B27059 /* RepositoryProtocol.swift */,
+				53FBAFD827FB0CCF00C9F9E5 /* CatService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +167,8 @@
 				9B85F54C27F4850F00632416 /* ChallengeOne */,
 				9B85F56327F4851100632416 /* ChallengeOneTests */,
 				9B85F54B27F4850F00632416 /* Products */,
+				82C95E3EAE56664A05F9096E /* Pods */,
+				58F18EB4C1BDE008D489AD06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,11 +184,13 @@
 		9B85F54C27F4850F00632416 /* ChallengeOne */ = {
 			isa = PBXGroup;
 			children = (
+				531C158E27FDDA270070FF2B /* ViewControllerPreview.swift */,
+				531C158F27FDDA270070FF2B /* ViewPreview.swift */,
 				9B71296D27F50AA300B27059 /* Model */,
 				9B71296627F50A3600B27059 /* ViewModel */,
+				53B1695827FC5B320031F525 /* View */,
 				9B85F54D27F4850F00632416 /* AppDelegate.swift */,
 				9B85F54F27F4850F00632416 /* SceneDelegate.swift */,
-				9B85F55127F4850F00632416 /* ViewController.swift */,
 				9B85F55627F4851100632416 /* Assets.xcassets */,
 				9B85F55827F4851100632416 /* LaunchScreen.storyboard */,
 				9B85F55B27F4851100632416 /* Info.plist */,
@@ -123,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				9B85F57D27F4898000632416 /* Helper */,
-				9B85F56427F4851100632416 /* ViewControllerTests.swift */,
 			);
 			path = ChallengeOneTests;
 			sourceTree = "<group>";
@@ -143,10 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B85F57427F4851100632416 /* Build configuration list for PBXNativeTarget "ChallengeOne" */;
 			buildPhases = (
+				32E1315042C9EA6C7A61909D /* [CP] Check Pods Manifest.lock */,
 				9B85F54627F4850F00632416 /* Sources */,
 				9B85F54727F4850F00632416 /* Frameworks */,
 				9B85F54827F4850F00632416 /* Resources */,
-				9B85F58027F48CC200632416 /* Swiftlint */,
+				DC1B62E4CFF609846A41E88C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B85F57727F4851100632416 /* Build configuration list for PBXNativeTarget "ChallengeOneTests" */;
 			buildPhases = (
+				358A9E20EDCA051EBE19B030 /* [CP] Check Pods Manifest.lock */,
 				9B85F55C27F4851100632416 /* Sources */,
 				9B85F55D27F4851100632416 /* Frameworks */,
 				9B85F55E27F4851100632416 /* Resources */,
@@ -233,7 +313,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9B85F58027F48CC200632416 /* Swiftlint */ = {
+		32E1315042C9EA6C7A61909D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,15 +321,58 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = Swiftlint;
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeOne-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		358A9E20EDCA051EBE19B030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeOneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC1B62E4CFF609846A41E88C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeOne/Pods-ChallengeOne-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeOne/Pods-ChallengeOne-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeOne/Pods-ChallengeOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -259,13 +382,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B71297127F50AC100B27059 /* Repository.swift in Sources */,
+				531C159327FDDFC70070FF2B /* ViewCodable.swift in Sources */,
+				53C877F027FF4C9100D104C6 /* BreedImageDTO.swift in Sources */,
 				9B85F55227F4850F00632416 /* ViewController.swift in Sources */,
 				9B71296C27F50A8400B27059 /* ViewModelDelegate.swift in Sources */,
 				9B71296A27F50A6700B27059 /* ViewModelProtocol.swift in Sources */,
 				9B85F54E27F4850F00632416 /* AppDelegate.swift in Sources */,
 				9B71297327F50AFB00B27059 /* RepositoryProtocol.swift in Sources */,
+				53B1695A27FC5B6F0031F525 /* CatViewController.swift in Sources */,
+				53C877F227FF4CB700D104C6 /* BreedWeightDTO.swift in Sources */,
+				53C877EE27FF4C6C00D104C6 /* BreedDTO.swift in Sources */,
+				531C159027FDDA270070FF2B /* ViewControllerPreview.swift in Sources */,
+				53B1695E27FC66A20031F525 /* ViewControllerDelegate.swift in Sources */,
+				53B1696027FC6B380031F525 /* ViewControllerPortocol.swift in Sources */,
+				53FBAFD927FB0CCF00C9F9E5 /* CatService.swift in Sources */,
 				9B71296827F50A4300B27059 /* ViewModel.swift in Sources */,
+				53FBAFDB27FB51BA00C9F9E5 /* Breed.swift in Sources */,
 				9B85F55027F4850F00632416 /* SceneDelegate.swift in Sources */,
+				531C159127FDDA270070FF2B /* ViewPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B85F57F27F4899600632416 /* XCTest+Extensions.swift in Sources */,
-				9B85F56527F4851100632416 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,11 +551,13 @@
 		};
 		9B85F57527F4851100632416 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CDAC3C02D0F49B76192A0D /* Pods-ChallengeOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N5Z737Y78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChallengeOne/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,11 +579,13 @@
 		};
 		9B85F57627F4851100632416 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20043F4574758D842C8F9D2A /* Pods-ChallengeOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N5Z737Y78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChallengeOne/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +607,7 @@
 		};
 		9B85F57827F4851100632416 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEAA7D7E0240FFE94A3DC2C4 /* Pods-ChallengeOneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +627,7 @@
 		};
 		9B85F57927F4851100632416 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E72EB6EE790662194D9D8B /* Pods-ChallengeOneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

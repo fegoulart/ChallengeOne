@@ -6,29 +6,17 @@
 //
 
 import Foundation
+import UIKit
 
 public final class LocalRepository: RepositoryProtocol {
-
-    let breeds: [String] = [
-        "Abyssinian",
-        "Aegean",
-        "American Bobtail",
-        "American Curl",
-        "American Shorthair",
-        "American Wirehair",
-        "Arabian Mau",
-        "Australian Mist",
-        "Balinese",
-        "Bambino",
-        "Bengal",
-        "Birman",
-        "Bombay",
-        "British Longhair",
-        "Burmese",
-        "Burmilla"]
-
-    public func fetchData() -> [String] {
-        return breeds
+    public func fetchData(completion: @escaping ([Breed]) ->
+                          Void) {
+        CatService.makeRequest { breeds in
+            completion(breeds)
+            print("breed list")
+            for breed in breeds {
+                print(breed.name)
+            }
+        }
     }
-
 }
